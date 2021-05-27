@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="visor">
+            <input type="text" readonly value="0">
+        </div>
+        <div class="teclas">
+            <div class="line-1">
+                <button id="sete" onclick="recuperaNumero($event, 7)">7</button>
+                <button id="oito" onclick="recuperaNumero($event, 8)">8</button>
+                <button id="nove" onclick="recuperaNumero($event, 9)">9</button>
+                <button id="divisao" onclick="recuperaOperacao($event, 'divisao')">/</button>
+            </div>
+            <div class="line-2">
+                <button id="quatro" onclick="recuperaNumero($event, 4)">4</button>
+                <button id="cinco" onclick="recuperaNumero($event, 5)">5</button>
+                <button id="seis" onclick="recuperaNumero($event, 6)">6</button>
+                <button id="multiplicacao" onclick="recuperaOperacao($event, 'multiplicacao')">*</button>
+            </div>
+            <div class="line-3">
+                <button id="um" onclick="recuperaNumero($event, 7)">1</button>
+                <button id="dois" onclick="recuperaNumero($event, 8)">2</button>
+                <button id="tres" onclick="recuperaNumero($event, 9)">3</button>
+                <button id="subtracao" onclick="recuperaOperacao($event, 'subtracao')">-</button>
+            </div>
+            <div class="line-4">
+                <button id="zero" onclick="recuperaNumero($event, 0)">0</button>
+                <button id="ponto" onclick="recuperaNumero($event, '.')">.</button>
+                <button id="igual" onclick="resultado($event)">=</button>
+                <button id="adicao" onclick="recuperaOperacao($event, 'adicao')">+</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
